@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2d-phys-engi</title>
+  </head>
+
+  <body onkeydown="return userControl(event);">
+    <table style="padding: 2px">
+      <tr>
+        <td>
+          <div>
+            <canvas id="canvas"></canvas>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script src="./engine-core/core.js"></script>
+    <script src="./engine-core/userControl.js"></script>
+    <script src="./lib/vect.js"></script>
+    <script src="./rigid-bodies/rigid-shape.js"></script>
+  </body>
+</html>
