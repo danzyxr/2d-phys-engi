@@ -1,16 +1,16 @@
 class Rectangle {
-  constructor(center = new vect(0, 0), width = 1, height = 1) {
+  constructor(center = new Vect2d(0, 0), width = 1, height = 1) {
     RigidShape.call(this, center);
-    this.type = "Rectangle";
+    this.type = 'Rectangle';
     this.width = width;
     this.height = height;
 
     this.vertices = [];
 
-    this.vertices[0] = new vect(center.x - width / 2, center.y - height / 2);
-    this.vertices[1] = new vect(center.x + width / 2, center.y - height / 2);
-    this.vertices[2] = new vect(center.x + width / 2, center.y + height / 2);
-    this.vertices[3] = new vect(center.x - width / 2, center.y + height / 2);
+    this.vertices[0] = new Vect2d(center.x - width / 2, center.y - height / 2);
+    this.vertices[1] = new Vect2d(center.x + width / 2, center.y - height / 2);
+    this.vertices[2] = new Vect2d(center.x + width / 2, center.y + height / 2);
+    this.vertices[3] = new Vect2d(center.x - width / 2, center.y + height / 2);
 
     this.normals = [];
 
@@ -28,7 +28,7 @@ class Rectangle {
   }
 }
 
-let prototype = Object.create(RigidShape.prototype);
+const prototype = Object.create(RigidShape.prototype);
 prototype.constructor = Rectangle;
 Rectangle.prototype = prototype;
 
