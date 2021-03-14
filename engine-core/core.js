@@ -1,6 +1,6 @@
 var engine = engine || {};
 
-engine.core = (function () {
+engine.core = (function() {
   const objs = [];
 
   const canvas = document.getElementById('canvas');
