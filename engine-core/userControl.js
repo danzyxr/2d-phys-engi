@@ -1,5 +1,5 @@
 function userControl(event) {
-  let keyCode = null;
+  let keyCode = undefined;
 
   if (window.event) {
     keyCode = event.keyCode; // IE
