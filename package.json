@@ -2,7 +2,7 @@
   "name": "2d-phys-engi",
   "version": "1.0.0",
   "description": "A small 2D physics engine using canvas",
-  "main": "index.js",
+  "main": "",
   "directories": {
     "lib": "lib"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/danzyxr/2d-phys-engi.git"
   },
-  "author": "",
+  "author": "danzyxr",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/danzyxr/2d-phys-engi/issues"
