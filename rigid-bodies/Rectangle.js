@@ -32,7 +32,7 @@ const prototype = Object.create(RigidShape.prototype);
 prototype.constructor = Rectangle;
 Rectangle.prototype = prototype;
 
-Rectangle.prototype.draw = function(context) {
+Rectangle.prototype.draw = function (context) {
   context.save();
   context.translate(this.vertices[0].x, this.vertices[0].y);
   context.rotate(this.angle);

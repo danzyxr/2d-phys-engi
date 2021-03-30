@@ -1,5 +1,14 @@
 function userControl(event) {
-  let keyCode = undefined;
+  let keyCode;
+
+  /*
+
+  TODO:
+    window.event is deprecated
+    if window.event then event.keycode -> keycode
+    if event.which then event.which -> keycode
+
+   */
 
   if (window.event) {
     keyCode = event.keyCode; // IE
