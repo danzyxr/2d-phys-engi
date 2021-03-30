@@ -12,6 +12,11 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
+    "no-undef": "off",
+    "no-unused-vars": "off",
+    "no-use-before-define": "off",
+    "no-sequences": "off",
+    "no-var": "off",
     "semi": ["error", "always"],
     "max-len": [
       "error",
