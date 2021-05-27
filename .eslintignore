@@ -1,6 +1,1 @@
-.vs/*
-.vscode/*
-.idea/*
-node_modules/*
-*.log
-tempCodeRunnerFile*
+/node_modules/*
