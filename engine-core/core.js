@@ -17,10 +17,20 @@ engine.core = (function () {
 
   const public = {
     objs: objs,
+
     width: canvas.width,
     height: canvas.height,
+
     context: canvas.getContext('2d')
   };
 
   return public;
 })();
+
+let runGameLoop = function () {
+  requestAnimationFrame(function () {
+    runGameLoop();
+  });
+  updateUIEcho();
+  draw();
+};
